@@ -6,9 +6,73 @@
     <link href="css/styles.css" rel="stylesheet" type="text/css">
     <script src="js/jquery-3.2.1.js"></script>
     <script src="js/scripts.js"></script>
-    <title>A letter</title>
+    <title>Hotel Registration</title>
 </head>
   <body>
-    
+    <div class="container">
+      <h1>Hotel Registration Form</h1>
+      <h2>Please fill out your info &amp; preferences below:</h2>
+      <form id="guest-form"
+
+        <div class="form-group">
+          <label for="name"></label>
+          <p><strong>Guest Name:</strong></p>
+          <input id="name" class="form-control" type="text">
+        </div>
+
+        <div class="container">
+
+          <p><strong>Food Preference:</strong></p>
+          <select class="form-control" id="food">
+            <option>Chicken</option>
+            <option>Fish</option>
+            <option>Vegetable</option>
+          </select>
+        </div>
+        <br>
+
+        <div class="container">
+          <p><strong>Music Preference:</strong></p>
+          <div class="radio">
+            <label>
+              <input type="radio" name="music" value="rock">
+              Rock &amp; Roll
+            </label>
+          </div>
+          <div class="radio">
+            <label>
+              <input type="radio" name="music" value="pop">
+              Pop
+            </label>
+          </div>
+          <div class="radio">
+            <label>
+              <input type="radio" name="music" value="country">
+              Country Western
+            </label>
+          </div>
+
+        </div>
+
+        <div class="container">
+          <p><strong>How Many Guests (4 Max):</strong></p>
+          <select class="form-control" id="guest-count">
+            <option>1</option>
+            <option>2</option>
+            <option>3</option>
+            <option>4</option>
+          </select>
+        </div>
+
+        <div class="container">
+          <div class="form-group">
+            <label for="today-date"></label>
+            <p><strong>Today's Date</strong></p>
+            <input id="today-date" class="form-control" type="date">
+          </div>
+        </div>
+        </div>
+      </form>
+    </div>
   </body>
 </html>
